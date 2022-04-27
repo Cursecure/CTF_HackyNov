@@ -26,7 +26,7 @@ Pro : [Ludovic Mullot](https://www.linkedin.com/in/ludovic-mullot/)
 
 ## Write-up
 
-Based on the context, someone connected to the Elderberry company switch deleted their configuration to create a DDOS. We may assume that we should turn to the part about the remote connections of the switch.
+Based on the context, someone connected to the Elderberry company switch deleted their configuration to create a DDoS. We may assume that we should turn to the part about the remote connections of the switch.
 
 Section line VTY 0 4 and line VTY 5 15 from the Elderby switch configuration file should do the trick.
 
