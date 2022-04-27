@@ -5,7 +5,6 @@
   ![Discord](https://img.shields.io/discord/897766049099956284?label=Discord&style=for-the-badge)
   ![Twitter Follow](https://img.shields.io/twitter/follow/HackyNov?color=%231d9bf0&label=Twitter&style=for-the-badge)
   ![Twitch Status](https://img.shields.io/twitch/status/hackynov?color=%23772ce8&style=for-the-badge)
-  ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Kur0n33k0/HackyNov_CTFD?color=green&label=size&style=for-the-badge)
   
   <p>Follow us on</p>
   <a href="https://www.linkedin.com/company/hacky-nov/">Linkedin</a>
