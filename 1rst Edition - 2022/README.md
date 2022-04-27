@@ -1,3 +1,10 @@
+<div align="center">
+  <a href="https://hackynov.fr"><img src="https://i.imgur.com/XGJF8Xu.png" alt="Hacky'Nov" width="50%"></a>
+  <br><br>
+ </div>
+
+----
+
 ## 1rst Edition - Challenges
 
 For the first edition which took place on April 01 2022, there were a total of 9 main categories and 50 challenges :
