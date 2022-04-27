@@ -54,6 +54,6 @@ username admin privilege secret 5 $1$mERr$IZDWWEpMCscy1sTS45Bs01
 After an internet search, it appears that cisco type 7 encryption is broken. In other words, it is reversible.
 With https://www.ifm.net.nz/cookbooks/passwordcracker.html we can quickly break the password and get the flag of the event.
 
-![WTP_Baby_Cisconnect](Pictures/Img1_Baby_Cisconnect.PNG)
+![WTP_Baby_Cisconnect](Img/Img1_Baby_Cisconnect.PNG)
 
 Flag : HACKYNOV[TYP7_1S_D34D}
