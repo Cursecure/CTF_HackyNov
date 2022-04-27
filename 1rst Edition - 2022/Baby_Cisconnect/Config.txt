@@ -1,0 +1,166 @@
+Current configuration : 2801 bytes
+!
+version 12.2
+service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname SW_Elderberry
+!
+enable secret 5 $1$mERr$IZDWWEpMCscy1sTS45Bs01
+!
+!
+!
+ip ssh version 2
+ip domain-name elerberry.fr
+!
+username jdaniele password 7 09464A061C480713181F13253920
+username rrobert password 7 095E5D0410111F5F1B0D17393C2B3A37 
+username user privilege password 7 022E2578203F210E7A553D2035402D5A3F3B0E78700C2E
+username admin privilege secret 5 $1$mERr$IZDWWEpMCscy1sTS45Bs01
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+ description ' PC Daniel '
+ switchport access vlan 10
+ switchport voice vlan 150
+ mls qos trust cos
+!
+interface FastEthernet0/2
+ description ' PC Robert '
+ switchport access vlan 20
+ switchport voice vlan 150
+ mls qos trust cos
+!
+interface FastEthernet0/3
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/4
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/5
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/6
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/7
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/8
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/9
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/10
+ description ' Serveur Backup Config '
+ switchport access vlan 100
+!
+interface FastEthernet0/11
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/12
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/13
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/14
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/15
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/16
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/17
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/18
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/19
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/20
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/21
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/22
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/23
+ description ' port ferme '
+ shutdown
+!
+interface FastEthernet0/24
+ description ' Firewall '
+ switchport mode trunk
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan10
+ mac-address 0060.4767.ed01
+ no ip address
+!
+interface Vlan100
+ mac-address 0060.4767.ed02
+ ip address 192.168.100.253 255.255.255.0
+!
+ip default-gateway 192.168.100.254
+!
+banner motd ^C Ce commutateur est la propriete de la societe elderberry sont acces est strictement interdit ! ^C
+logging trap debugging
+!
+!
+!
+line con 0
+ password Console
+!
+line vty 0 4
+ login local
+ transport input ssh
+ transport output ssh
+line vty 5 15
+ login local
+ transport input ssh
+ transport output ssh
+!
+!
+!
+ntp server 192.168.0.100
+!
+end
