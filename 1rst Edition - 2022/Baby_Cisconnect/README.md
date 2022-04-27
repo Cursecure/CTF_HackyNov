@@ -56,4 +56,4 @@ With https://www.ifm.net.nz/cookbooks/passwordcracker.html we can quickly break 
 
 ![WTP_Baby_Cisconnect](Img/Img1_Baby_Cisconnect.PNG)
 
-Flag : HACKYNOV[TYP7_1S_D34D}
+Flag : HACKYNOV{TYP7_1S_D34D}
